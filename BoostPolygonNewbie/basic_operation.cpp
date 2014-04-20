@@ -49,6 +49,7 @@ void travelPosOfPolygon90(vector<Point> &getPosGroup, const Polygon90 &poly)
 	cout << endl;
 }
 
+/// do polygon or, "using namespace boost::polygon::operators;" is needed. 
 void polygonOR()
 {
 	vector<Point> posGroup;
@@ -84,7 +85,7 @@ void polygonOR()
 	Poly90Set polySet;
 	// 点接壤-->取并集size()为2
 	// 多点接壤-->取并集size()为1
-	polySet += (poly | poly1);
+	assign(polySet, poly | poly1);
 	cout << "Area of poly | poly1: " << gtl::area(polySet) << " size:" << polySet.size() << endl;
 
 	Poly90Set polySet1;
