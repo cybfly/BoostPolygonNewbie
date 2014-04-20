@@ -82,10 +82,13 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="basic_operation.h" />
+    <ClInclude Include="BoostHeader.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="basic_operation.cpp" />
     <ClCompile Include="BoostPolygonNewbie.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>

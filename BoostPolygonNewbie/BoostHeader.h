@@ -1,4 +1,9 @@
 
+/*
+Header of Boost Polygon Library.
+You should set the additional include path at the up level of folder boost
+*/
+
 #ifndef __BOOSTHEADER_H__
 #define __BOOSTHEADER_H__
 
@@ -14,7 +19,6 @@ using namespace boost::polygon::operators;
 
 typedef gtl::point_data<int> Point;
 typedef gtl::polygon_data<int> Polygon;
-//typedef gtl::polygon_traits<Polygon>::point_type Point;
 typedef gtl::polygon_90_data<int> Polygon90;
 typedef std::vector<Polygon90> Poly90Set;
 
